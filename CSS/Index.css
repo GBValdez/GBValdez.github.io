@@ -1,0 +1,35 @@
+body{
+    background: radial-gradient(circle at center center, rgb(72, 0, 100), rgb(31, 0, 43));
+}
+#particles-js{
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.Presentacion{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'forte';
+}
+/*
+.Titulo{
+    background-image: linear-gradient(45deg,white,rgb(194, 194, 194));
+    background-image: radial-gradient(circle at center center, rgb(255, 255, 255), rgb(146, 146, 146));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}*/
+.Foto{
+    width: 15%;
+    border-radius: 25%;
+    border: 10px solid rgb(109, 1, 151);
+}
+.Bienvenida{
+    font-size: 150%;
+}
+P{
+    font-size: 150%;
+}
