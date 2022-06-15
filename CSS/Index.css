@@ -1,18 +1,35 @@
+*{
+    font-family: 'forte';
+}
 body{
     background: radial-gradient(circle at center center, rgb(72, 0, 100), rgb(31, 0, 43));
+    background-color: white;
 }
 #particles-js{
+    position: absolute;
     top: 0;
     height: 100vh;
     width: 100%;
-    position: fixed;
-    z-index: -1;
+    z-index: -2;
 }
 .Presentacion{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
     text-align: center;
     color: aliceblue;
     font-family: 'forte';
+    margin-top: 0.1%;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
+
+.Pres{
+    position: absolute;
+}
+
 /*
 .Titulo{
     background-image: linear-gradient(45deg,white,rgb(194, 194, 194));
@@ -23,7 +40,7 @@ body{
     -webkit-text-fill-color: transparent;
 }*/
 .Foto{
-    height: 60vh;
+    height: 50vh;
     border-radius: 25%;
     border: 10px solid rgb(109, 1, 151);
 }
@@ -32,4 +49,59 @@ body{
 }
 P{
     font-size: 150%;
+}
+nav{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    background-image: linear-gradient(to right,rgba(156, 0, 156,0.7),rgba(114, 0, 114,0.7));
+
+}
+.navegacion{
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+.navegacion li{
+    margin-left: 10px;   
+    text-align: center;
+    animation-name: Flotar;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.7s;
+    animation-timing-function: ease-in-out;
+    transition: font-size 200ms;
+}
+.navegacion li:hover{
+    font-size: 120%;
+}
+
+.Me{
+    animation-delay: 300ms;
+}
+.Kill{
+    animation-delay: 600ms;
+}
+.Proyect{
+    animation-delay: 900ms;
+}
+.Contact{
+    animation-delay: 1200ms;
+}
+@keyframes Flotar{
+    0%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(7px);
+    }
+}
+
+
+.About{
+    background-color: white;
 }
