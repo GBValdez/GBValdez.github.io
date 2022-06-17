@@ -10,21 +10,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="CSS/normalize.css">
     <link type="text/css" rel="stylesheet" href="CSS/Index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header>
+    <header >
         <nav>
             <ol class="navegacion">
-                <li class="Inicio">Inicio</li>
-                <li class="Me">Sobre mi</li>
-                <li class="Kill">Tecnologias</li>
-                <li class="Proyect">Proyectos</li>
-                <li class="Contact">Contacto</li>
+                <li ><a href="#Inicio">Inicio </a></li>
+                <li ><a href="#Sobre">Gabriel</a></li>
+                <li >Habilidades</li>
+                <li >Proyectos</li>
+                <li >Contactos</li>
             </ol>
         </nav>
     </header>
-    <section class="Presentacion">
+    <section class="Part Presentacion" id="Inicio">
         <div id="particles-js" > 
+            
             
         </div>
         <div class="Pres">  
@@ -34,15 +36,68 @@
                 <h1 class="Titulo">Gabriel Benjamin Valdez De León</h1>
                 <h2 class="Bienvenida"> Bienvenido </h2>
                 <img src="Imagenes/Fotografia.jpg" class="Foto">
-                <p>Portafolio en construccion</p>
+                <p class="Port_espera">Portafolio en construccion</p>
+                <div style="height: 150px; overflow: hidden; width: 100%;" >
+                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                        <path d="M0.28,26.16 C307.28,145.56 327.59,13.33 499.72,5.45 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path>
+                    </svg>
+                </div>
         </div>
-        <div style="height: 150px; overflow: hidden; width: 100%; bottom: 0; position: absolute;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.28,26.16 C307.28,145.56 327.59,13.33 499.72,5.45 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+        
     </section>
-    <!-- 
-    <section class="About">
+
+    <section class="Part About" id="Sobre">
         <h2>Sobre mi</h2>
+        <article>
+            
+            <div>
+                <h3>Perfil</h3>
+                <p>
+                    Hola, soy Gabriel Valdez, soy una persona autodidacta que nunca deja de aprender, 
+                    que le gusta hacer realidad las ideas más alucinantes mediante código 
+                    y dar experiencias increíbles al usuario, soy desarrollador web Front-end 
+                    y de juegos Independiente
+                </p>
+            </div>
+            <div class="Skill">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>
+                        <img src="Imagenes/HTML5.png" alt="Logo de HTML5">
+                        
+                    </li>
+                    <li>
+                        <img src="Imagenes/CSS2.png" alt="Logo de CSS">
+
+                    </li>
+                    <li>
+                        <img src="Imagenes/JavaScript.png" alt="Logo de JavaScript">
+                    </il>
+                    <li>
+                        <img src="Imagenes/C++.png" alt="Logo de JavaScript">
+                    </li>
+                    <LI>
+                        <img src="Imagenes/MySQL.png" alt="Logo de JavaScript">
+
+                    </LI>
+                    <LI>
+                        <img src="Imagenes/Game Maker.png" alt="Logo de JavaScript">
+                    </LI>
+                    <li>
+                        <img src="Imagenes/Godot.png" alt="Logo de JavaScript">
+                    </li>
+                    <li>
+                        <img src="Imagenes/Git.png" alt="Logo de JavaScript">
+                    </li>
+                    <li>
+                        <img src="Imagenes/GitHub.png" alt="Logo de JavaScript">
+                    </li>
+                </ul>
+            </div>
+            
+        </article>
     </section>
-    -->
+    
     <script src="Script/particles.min.js"></script>
     <script src="Script/App.js"></script>
 
