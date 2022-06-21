@@ -48,12 +48,14 @@ a{
     */
 }
 .Foto{
-    height: 50vh;
+    height: 80vh;
     border-radius: 25%;
-    border: 10px solid rgb(109, 1, 151);
+  /*  border: 10px solid rgb(109, 1, 151);
+    */
 }
 .Bienvenida{
     font-size: 150%;
+    margin-bottom: 3px;
 }
 nav{
     position: fixed;
