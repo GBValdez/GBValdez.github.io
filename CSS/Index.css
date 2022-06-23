@@ -1,9 +1,24 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+video{
+    width: 80vw;
+}
 a{
     text-decoration: none;
     color: white;
+}
+.Proyecto_U div a{
+    margin-bottom: 10px;
+    display: block;
+    color: black;
+    text-decoration: underline;
+}
+.Proyecto_U{
+    margin-bottom: 50px;
+}
+.Proyecto_U div img{
+    width: 80vw;
 }
 
 #particles-js{
