@@ -18,7 +18,8 @@ a{
     margin-bottom: 50px;
 }
 .Proyecto_U div img{
-    width: 80vw;
+    width: 560px;
+    height:auto;
 }
 
 #particles-js{
