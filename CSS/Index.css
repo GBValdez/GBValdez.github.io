@@ -56,7 +56,9 @@ a{
     display: flex;
     justify-content: center;
 }
-
+.Pres h2{
+    color: white;
+}
 .Pres{
     width:100%;
 }
@@ -130,6 +132,7 @@ nav{
 .Proyect{
     animation-delay: 800ms;
 }
+
 /*.Contact{
     animation-delay: 1200ms;
 }*/
@@ -156,13 +159,22 @@ nav{
     justify-content: space-between;
     flex-wrap:wrap;
 }
-
+h2{
+    text-align: center;
+    color: rgb(65, 2, 124);
+}
+h3{
+    color: rgb(85, 1, 163);
+    font-size: 140%;
+}
+h4{
+    font-size: 120%;
+    color: rgb(111, 0, 214)
+}
 .About h2{
     font-size: 170%;
 }
-.About h3{
-    font-size: 130%;
-}
+
 
 .About h3, .About h2 {
     padding:0;
