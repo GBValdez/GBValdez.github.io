@@ -18,9 +18,9 @@ a{
     text-decoration: none;
     color: white;
 }
-.Proyecto_U div a{
+.Proyecto_U div a, .Descargar{
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     color: black;
     background-color: rgb(154, 51, 250);
     box-shadow: 0 10px rgb(134, 8, 252);
@@ -28,13 +28,13 @@ a{
     color: white;
     transition: 300ms ease-in-out;
 }
-.Proyecto_U div a:hover{
+.Proyecto_U div a:hover , .Descargar:hover{
     transform: translateY(5px);
     background-color: rgb(132, 0, 255);
     box-shadow: 0 5px rgb(101, 3, 192);
     transition: 300ms ease-in-out;
 }
-.Proyecto_U div a:active{
+.Proyecto_U div a:active , .Descargar:active{
     transform: translateY(10px);
     background-color: rgb(100, 1, 192);
     box-shadow: 0 0px rgb(134, 8, 252);
