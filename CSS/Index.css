@@ -19,19 +19,37 @@ a{
     color: white;
 }
 .Proyecto_U div a{
+    display: inline-block;
     margin-bottom: 10px;
-    display: block;
     color: black;
-    text-decoration: underline;
+    background-color: rgb(154, 51, 250);
+    box-shadow: 0 10px rgb(134, 8, 252);
+    padding: 10px;
+    color: white;
+    transition: 300ms ease-in-out;
 }
+.Proyecto_U div a:hover{
+    transform: translateY(5px);
+    background-color: rgb(132, 0, 255);
+    box-shadow: 0 5px rgb(101, 3, 192);
+    transition: 300ms ease-in-out;
+}
+.Proyecto_U div a:active{
+    transform: translateY(10px);
+    background-color: rgb(100, 1, 192);
+    box-shadow: 0 0px rgb(134, 8, 252);
+    transition: 300ms ease-in-out;
+}
+
 .Proyecto_U{
     margin-bottom: 50px;
 }
 .Proyecto_U div img{
+    margin-top: 30px;
     width:90%;
     height:auto;
+    border: 10px solid rgb(52, 2, 99);;
 }
-
 
 #particles-js{
     background: -webkit-radial-gradient(circle at center center, rgba(72, 0, 100,0.9), rgba(31, 0, 43,1));
