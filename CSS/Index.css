@@ -1,8 +1,18 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+body{
+    width: 100%;
+}
+.Proyectos{
+    margin:40px;
+}
 video{
     width: 80vw;
+}
+iframe{
+    width: 90%;
+    height: auto;
 }
 a{
     text-decoration: none;
@@ -18,9 +28,10 @@ a{
     margin-bottom: 50px;
 }
 .Proyecto_U div img{
-    width: 560px;
+    width:90%;
     height:auto;
 }
+
 
 #particles-js{
     background: -webkit-radial-gradient(circle at center center, rgba(72, 0, 100,0.9), rgba(31, 0, 43,1));
@@ -64,8 +75,9 @@ a{
     */
 }
 .Foto{
-    height: 80vh;
+    width: 90%;
     border-radius: 25%;
+    max-width: 300px;
   /*  border: 10px solid rgb(109, 1, 151);
     */
 }
@@ -89,10 +101,13 @@ nav{
     list-style: none;
     display: flex;
     justify-content: end;
-    margin-right: 20px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 50px;
+    box-sizing: border-box;
 }
 .navegacion li{
-    margin-left: 10px;   
+    margin-right: 10px;   
     text-align: center;
     font-size:90%;
     animation-name: Flotar;
@@ -107,17 +122,17 @@ nav{
 }
 
 .Me{
-    animation-delay: 300ms;
+    animation-delay: 400ms;
 }
-.Kill{
+/*.Kill{
     animation-delay: 600ms;
-}
+}*/
 .Proyect{
-    animation-delay: 900ms;
+    animation-delay: 800ms;
 }
-.Contact{
+/*.Contact{
     animation-delay: 1200ms;
-}
+}*/
 @keyframes Flotar{
     0%{
         transform: translateY(0px);
@@ -182,5 +197,6 @@ nav{
 }
 
 html{
+    width: 100%;
     scroll-behavior: smooth;
 }
