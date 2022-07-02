@@ -114,7 +114,7 @@ nav{
     width: 100%;
     top: 0;
     background-image: linear-gradient(to right,rgba(156, 0, 156,0.7),rgba(114, 0, 114,0.7));
-
+    z-index: 100;
 }
 .Port_espera{
     font-size: 150%;
@@ -209,9 +209,25 @@ h4{
 }
 
 .About img{
-    height: 100px;
+    width: 70px;
+    
 }
 
+.About svg{
+    height: 70px;
+    width: 70px;
+    filter: invert(100%) sepia(0%) saturate(7491%) hue-rotate(92deg) brightness(99%) contrast(101%);
+}
+.Logo-Skill{
+    height: 100px;
+    width: 100px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    border: 7px solid  purple;
+    background:purple;
+    border-radius:25%;
+}
 .About ul{
     display: flex;
     justify-content: space-between;
@@ -242,9 +258,9 @@ html{
     position: relative;
     text-align: center;
     display: inline-block;
-    border-radius: 25%;
+    border-radius: 10%;
     height: 400px;
-    width: 400px;
+    width: 300px;
     background: url(../Imagenes/Proyecto_u.jpg) ;
     background-size: cover;
     background-position: center;
@@ -252,45 +268,71 @@ html{
     list-style: none;
     overflow: hidden;
     box-shadow: 0px 0px 5px   black;
-    transition: 0.2s ease-out;
 }
 .Proyect:hover{
     cursor: pointer;
-    transform: translateY(-3px);
-    transition: 0.2s ease-out;
     background: url(../Imagenes/Proyecto_u.jpg) ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .Proyect:hover .Fondo-Proyect{
-    opacity: 0.8;
     transition: 400ms ease-in-out;
+    transform: translateY(0px);
 }
 .Fondo-Proyect{
-    transition: 1s ease-in-out;
-    opacity: 0;
+    border-radius: 10%;
+    transform: translateY(0px);
+    transition: 2s ease-in-out;
     z-index: -10;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(165, 2, 165),rgba(240, 2, 240)) ;
+    background: linear-gradient(to top, rgba(165, 2, 165, 0.9),rgba(240, 2, 240,0.9)) ;
     
 }
 
 .Proyect h4{
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
     margin-top: 20px;
     padding: 10px;
     color: white;
     background: purple;
 }
-
-.Proyect article p{
+.Proyect article{
+    text-align: center;
     color: white;
-    visibility: hidden;
+}
+.Proyect article p{
+    margin-top: 50px;
+    padding: 30px;
+    padding-bottom: 0;
 }
 
+.Proyect article li{
+    list-style:disc;
+    text-align: left;
+}
+.Fondo-Proyect div{
+    width: 80px;
+    margin: 0px 10px;
+    text-align: center;
+    display: inline-block;
+}
 
-.Proyect:hover p{
-    visibility: visible;
+.Fondo-Proyect div p{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.Proyect article img{
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    filter: invert(100%) sepia(0%) saturate(7491%) hue-rotate(92deg) brightness(99%) contrast(101%);
 }
