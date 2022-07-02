@@ -52,15 +52,7 @@ a{
     transition: 300ms ease-in-out;
 }
 
-.Proyecto_U{
-    margin-bottom: 50px;
-}
-.Proyecto_U div img{
-    margin-top: 30px;
-    width:90%;
-    height:auto;
-    border: 10px solid rgb(52, 2, 99);;
-}
+
 
 #particles-js{
     background: -webkit-radial-gradient(circle at center center, rgba(72, 0, 100,0.9), rgba(31, 0, 43,1));
@@ -295,37 +287,40 @@ html{
 
 .Proyect{
     margin: 0px 10px; 
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     padding: 0;
     z-index: 10;
     position: relative;
     text-align: center;
     display: inline-block;
     border-radius: 10%;
-    height: 400px;
+    height: 350px;
     width: 300px;
-    background: url(../Imagenes/Proyecto_u.jpg) ;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     list-style: none;
     overflow: hidden;
-    box-shadow: 0px 0px 5px   black;
+    box-shadow: 0px 0px 5px   rgb(37, 37, 37);
 }
-.Proyect:hover{
-    cursor: pointer;
-    background: url(../Imagenes/Proyecto_u.jpg) ;
+.Frog-Adventure{
+    background: url(../Imagenes/Camaleon\ \(1\).gif) ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.Proyecto_Un{
+    background: url(../Imagenes/Proyecto_u.png) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .Proyect:hover .Fondo-Proyect{
     transition: 400ms ease-in-out;
     transform: translateY(0px);
 }
 .Fondo-Proyect{
     border-radius: 10%;
-    transform: translateY(0px);
+    transform: translateY(350px);
     transition: 2s ease-in-out;
     z-index: -10;
     position: absolute;
@@ -356,21 +351,13 @@ html{
     text-align: justify;
 }
 
-.Proyect article div div p{
-    text-align: center;
-}
 
 
 .Proyect article li{
     list-style:disc;
     text-align: left;
 }
-.Fondo-Proyect div{
-    width: 80px;
-    margin: 0px 10px;
-    text-align: center;
-    display: inline-block;
-}
+
 
 .Fondo-Proyect div p{
     color: white;
@@ -380,8 +367,18 @@ html{
 }
 
 .Proyect article img{
+    margin: 10px;
     margin-top: 20px;
     width: 50px;
     height: 50px;
     filter: invert(100%) sepia(0%) saturate(7491%) hue-rotate(92deg) brightness(99%) contrast(101%);
+}
+
+.CONT-BUTTON{
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    position: absolute;
+    margin-bottom: 10px;
 }
