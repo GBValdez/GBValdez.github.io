@@ -38,7 +38,7 @@
                 <h2 class="Bienvenida"> Bienvenido </h2>
                 <img src="Imagenes/Fotografia.png" class="Foto">
                 
-                <div style="height: 150px; overflow: hidden; width: 100%; position: absolute; bottom: 0;" >
+                <div  style="height: 150px; overflow: hidden; width: 100%; position: absolute; bottom: 0;" >
                     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                         <path d="M0.28,26.16 C307.28,145.56 327.59,13.33 499.72,5.45 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path>
                     </svg>
@@ -49,9 +49,10 @@
 
     <section class="Part About" id="Sobre">
         <h2>Sobre mi</h2>
+        <a class="Descargar" href="CV/Gabriel Valdez CV.pdf" target="_blank">Ver CV</a>
         <article>
-            <a class="Descargar" href="CV/Gabriel Valdez CV.pdf" target="_blank">Ver CV</a>
-            <div>
+            
+            <div class="Perfil About--Mini">
                 <h3>Perfil</h3>
                 <p>
                     Hola, soy Gabriel Valdez, soy una persona autodidacta que nunca deja de aprender, 
@@ -59,8 +60,19 @@
                     y dar experiencias increíbles al usuario, soy desarrollador web Front-end 
                     y de juegos Independiente
                 </p>
+                <h4>Hobbies</h4>
+                <ul>
+                    <li>Pasear al lobo</li>
+                    <li>Crear y jugar videojuego</li>
+                    <li>Jugar Basketball</li>
+                    <li>Escuchar audiolibros sobre desarrollo personal</li>
+                    <li>Aprender cosas nuevas</li>
+
+
+
+                </ul>
             </div>
-            <div class="Skill">
+            <div class="Skill About--Mini" >
                 <h3>Habilidades</h3>
                 <ul>
 
@@ -119,17 +131,21 @@
             
         </article>
     </section>
+
+    <div  style="height: 150px; overflow: hidden; width: 100%; position: relative; bottom: 0; margin: 0;" >
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.28,26.16 C307.28,145.56 327.59,13.33 499.72,5.45 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgb(0, 0, 0);"></path>
+        </svg>
+    </div>
+    <div style="background: black; margin: 0;">
     
-    <section class="Proyectos" id="Proyectos">
-        <h2>
+        <section class="Proyectos" id="Proyectos" style="margin-top: 0; margin-bottom: 0;">
+        <h2 style="margin-top: 0;">
             Proyectos
         </h2>
-        <h3>
-            Paginas web
-        </h3>
         <ul>
             <li>
-                <div class="Proyect Proyecto_Un">
+                <div class="Proyect Proyecto_Un" >
                 
                     <article>
                         <h4>
@@ -147,12 +163,16 @@
                             </ol>
                     
                                 <div>
-                                    <a href=""><img src="Imagenes/Pagina.png" alt="Imagen de internet" title="Ir a la pagina">
+                                    <a target="_blank" href="https://kaleidoscopic-malabi-ccf289.netlify.app/">
+                                        <img src="Imagenes/Pagina.png" alt="Imagen de internet" title="Ir a la pagina">
                                     </a>
                                     <p>Ir a la pagina</p>
                                 </div>
                                 <div>
-                                    <img src="Imagenes/GitBoton.png" alt="Imagen del logo de git" title="Ir al Repositorio">
+                                    <a href="https://github.com/GBValdez/Proyecto_u.git" target="_blank">
+                                        <img src="Imagenes/GitBoton.png" alt="Imagen del logo de git" title="Ir al Repositorio">
+                                    </a>
+                                    
                                     <p>Ir al Repositorio</p>
                                 </div>
                             
@@ -164,41 +184,54 @@
                     
                 </div>
             </li>
-            <li class="Proyecto_U">
-                <div>
-                    <h4>Proyecto de la Universidad</h4>
-                    <p>El presente proyecto fue hecho para una tarea de la universidad en el cual consistia en hacer una pagina web
-                        el cual se divide en 3 secciones:
-                        <ol>
-                            <li>Presentarme y hablar sobre mi</li>
-                            <li>Que me parecio el curso</li>
-                            <li>Una critica constructiva</li>
-                        </ol> 
-                    </p>
-                    <p>Nota: Para una mejor experiencia abrirlo en ordenadores</p>
-                    <a href="https://kaleidoscopic-malabi-ccf289.netlify.app/" target="_blank">  Ver la pagina </a>
-                    <a href="https://github.com/GBValdez/Proyecto_u.git" target="_blank"> Ver Repositorio </a>
-                </div>
-            
-            </li>
-            
-        </ul>
-        <h3>
-            Juegos
-        </h3>
-            <ul>
+
             <li>
-                <div>
-                    <h4>Frog Adventure</h4>
-                    <p>Este es el juego que estoy desarrollando actualmente, en el cual tu eres Frog y tienes que comer frutas, vencer a los enemigos y pasar niveles desafiantes</p>
-                    <p>Arte: Pixel Frog</p>
-                    <p>Musica: Hola Beats</p>
-         
+                <div class="Proyect Frog-Adventure" >
+                
+                    <article>
+                        <h4>
+                            Frog Adventure
+                        </h4>
+                        <div class="Fondo-Proyect">
+                            <p>Este es el juego que estoy desarrollando 
+                                actualmente, en el cual tu eres Frog y tienes que comer frutas, 
+                                vencer a los enemigos y pasar niveles desafiantes
+                            <br>
+                            <br>
+                            Arte: Pixel Frog
+                            <br>
+                            <br>
+                            Musica: Hola Beats
+                            </p>
+        
+                    
+                                <div>
+                                    <a target="_blank" href="https://kaleidoscopic-malabi-ccf289.netlify.app/">
+                                        <img src="Imagenes/Pagina.png" alt="Imagen de internet" title="Ir a la pagina">
+                                    </a>
+                                    <p>Ir a la pagina</p>
+                                </div>
+                                <div>
+                                    <a href="https://github.com/GBValdez/Proyecto_u.git" target="_blank">
+                                        <img src="Imagenes/GitBoton.png" alt="Imagen del logo de git" title="Ir al Repositorio">
+                                    </a>
+                                    
+                                    <p>Ir al Repositorio</p>
+                                </div>
+                            
+                            
+                            
+                               
+                        </div>
+                    </article>
+                    
                 </div>
             </li>
+            
         </ul>
         
     </section>
+</div>
     <script src="Script/particles.min.js"></script>
     <script src="Script/App.js"></script>
 

@@ -7,6 +7,14 @@ body{
 .Proyectos{
     margin:40px;
 }
+.Proyectos ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .Proyectos li{
     list-style: none;
 }
@@ -140,6 +148,10 @@ nav{
     animation-timing-function: ease-in-out;
     transition: font-size 100ms;
 }
+.Proyectos p , .Proyectos li,.Proyectos h2{
+    color: white;
+}
+
 .navegacion li:hover{
     font-size:110%;
 }
@@ -179,6 +191,7 @@ nav{
     display: flex;
     justify-content: space-between;
     flex-wrap:wrap;
+    width: 100%;
 }
 h2{
     text-align: center;
@@ -205,38 +218,66 @@ h4{
     font-weight:10px;
 }
 
-.About div{
+@media screen and (min-width:545px) {
+    
+    .About--Mini{
+        width: 45%;
+    }
 }
 
+
+
 .About img{
-    width: 70px;
+    width: 50px;
     
 }
 
 .About svg{
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     filter: invert(100%) sepia(0%) saturate(7491%) hue-rotate(92deg) brightness(99%) contrast(101%);
 }
 .Logo-Skill{
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
+    margin: 1px;
     display:flex;
     align-items: center;
     justify-content:center;
     border: 7px solid  purple;
     background:purple;
-    border-radius:25%;
-}
-.About ul{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    border-radius: 25%;
 }
 
-.About li{
+.About ul{
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.About .Skill ul{
+    justify-content: space-between;
+}
+
+.About .Skill li{
     list-style: none;
+    margin: 5px;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.Perfil li{
+    list-style: disc;
     margin: 10px;
+}
+.Perfil ul{
+    margin-bottom: 10px;
+}
+
+.Perfil h4{
+    margin:10px;
+    margin-left: 0;
 }
 .Skill:nth-child(1){
     text-align: center;
@@ -253,6 +294,8 @@ html{
 
 
 .Proyect{
+    margin: 0px 10px; 
+    margin-bottom: 5px;
     padding: 0;
     z-index: 10;
     position: relative;
@@ -310,7 +353,13 @@ html{
     margin-top: 50px;
     padding: 30px;
     padding-bottom: 0;
+    text-align: justify;
 }
+
+.Proyect article div div p{
+    text-align: center;
+}
+
 
 .Proyect article li{
     list-style:disc;
@@ -332,7 +381,7 @@ html{
 
 .Proyect article img{
     margin-top: 20px;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     filter: invert(100%) sepia(0%) saturate(7491%) hue-rotate(92deg) brightness(99%) contrast(101%);
 }
