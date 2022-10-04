@@ -101,7 +101,7 @@ a{
     width: 90%;
     border-radius: 25%;
     max-width: 300px;
-  /*  border: 10px solid rgb(109, 1, 151);
+    /*  border: 10px solid rgb(109, 1, 151);
     */
 }
 .Bienvenida{
@@ -306,6 +306,12 @@ html{
     background-position: center;
     background-repeat: no-repeat;
 }
+.BotTube{
+    background: url(../Imagenes/BotTube.png) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .Proyecto_Un{
     background: url(../Imagenes/Proyecto_u.png) ;
@@ -329,13 +335,25 @@ html{
     background: linear-gradient(to top, rgba(165, 2, 165, 0.9),rgba(240, 2, 240,0.9)) ;
     
 }
-
+.Tecnologias{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.Tecnologias svg{
+    width: 20px;
+    height: 30px;
+    filter: invert(100%) sepia(0%) saturate(7491%) hue-rotate(92deg) brightness(99%) contrast(101%);
+    margin: 0 3px ;
+}
 .Proyect h4{
     position: absolute;
     right: 0;
     left: 0;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 10px;
     color: white;
     background: purple;
